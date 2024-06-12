@@ -1,0 +1,23 @@
+
+## \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+## \\                                \\
+## \\ Kalimba Radio       r2 by prod \\
+## \\    Midi to Keyboard Translator \\
+## \\                                \\
+## \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+# pattern to use (yaml file without ".yaml")
+pattern: unconscious
+# MIDI devices (run it blank to get list of midi devices)
+input: loopMIDI Port
+# keybinds
+key_modechange: '-'
+key_playmidi: '='
+key_pausemidi: space
+key_stopmidi: esc
+key_quit: esc
+# framerate: used for polling
+fps: 60
+
+# dont change this
+debug: false

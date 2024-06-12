@@ -1,0 +1,47 @@
+## Collective Unconscious
+
+## Config
+# Configurated for RPGMaker 2k3.
+# - No chords support: arpeggiates them instead
+# - Octave change keys: smart octaves active
+# - Can only press 1 key every frame: 1/60
+
+_idle_delay: 1 # ticks to rest between each checks 
+_busy_delay: 1 # tick to wait before pressing next note (arpeggio, set to 0 to play multiple notes at the same time)
+_release_duration: 1 # ticks to wait before releasing the note (set to 0 to press until you release the key)
+_smart_octave: true # if true, all but last note will be treated as octave and not be pressed multiple times.
+_panic_threshold_notes: 6 # number of queued notes to panic and skip processing. this is important for cases where there are too many notes and the thing is overloaded.
+
+## Notes
+# you can directly instruct MIDI operation, all messages look like "903C2100", it gets fed into regex:
+# midi_^903C: A, 1 # (will match for every midi message starting with "903C") (play C)
+
+# or alternatively, you can press or release with note names, with release marked as ^[note] (ahk notation):
+# press_C5: [, left
+# release_C5: ^[, ^left
+
+# you can also define press and release at the same time with toggle_
+# toggle_C5: [, left # does the same thing as above
+
+# you can also define meta notes:
+# press_C#: 2
+# release_5: ^left
+
+# key press order: [META_OCTAVE] [META_NOTE] [SPECIFIC_NOTE] [MIDI]
+
+press_C: '1'
+press_C#: '2'
+press_D: '3'
+press_D#: '4'
+press_E: '5'
+press_F: '6'
+press_F#: '7'
+press_G: '8'
+press_G#: '9'
+press_A: '0'
+press_A#: '['
+press_B: ']'
+
+press_4: A
+press_5: S
+press_6: L

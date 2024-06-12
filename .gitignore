@@ -1,0 +1,6 @@
+test/
+build/
+dist/
+open vscode real style.bat
+*.exe
+*.spec

@@ -1,0 +1,57 @@
+## Core Keeper
+
+## Config
+# Configurated for Core Keeper's Ocarina and Drum. ocarina on slot 9, drum on slot 0.
+
+_idle_delay: 1 # ticks to rest between each checks 
+_busy_delay: 0 # tick to wait before pressing next note (arpeggio, set to 0 to play multiple notes at the same time)
+_release_duration: 0 # ticks to wait before releasing the note (set to 0 to press until you release the key)
+_smart_octave: false # if true, all but last note will be treated as octave and not be pressed multiple times.
+_panic_threshold_notes: 0 # number of queued notes to panic and skip processing. this is important for cases where there are too many notes and the thing is overloaded.
+
+## Notes
+# you can directly instruct MIDI operation, all messages look like "903C2100", it gets fed into regex:
+# midi_^903C: A, 1 # (will match for every midi message starting with "903C") (play C)
+
+# or alternatively, you can press or release with note names, with release marked as ^[note] (ahk notation):
+# press_C5: [, left
+# release_C5: ^[, ^left
+
+# you can also define press and release at the same time with toggle_
+# toggle_C5: [, left # does the same thing as above
+
+# you can also define meta notes:
+# press_C#: 2
+# release_5: ^left
+
+# key press order: [META_OCTAVE] [META_NOTE] [SPECIFIC_NOTE] [MIDI]
+
+toggle_C4: Z
+toggle_C#4: S
+toggle_D4: X
+toggle_D#4: D
+toggle_E4: C
+toggle_F4: V
+toggle_F#4: G
+toggle_G4: B
+toggle_G#4: H
+toggle_A4: 'N'
+toggle_A#4: J
+toggle_B4: M
+
+toggle_C5: Q
+toggle_C#5: '2'
+toggle_D5: W
+toggle_D#5: '3'
+toggle_E5: E
+toggle_F5: R
+toggle_F#5: '5'
+toggle_G5: T
+toggle_G#5: '6'
+toggle_A5: 'Y'
+toggle_A#5: '7'
+toggle_B5: U
+
+toggle_C#6: esc
+toggle_D6: '9'
+toggle_D#6: '0'
