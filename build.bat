@@ -1,2 +1,2 @@
-python -OO -m PyInstaller --clean --onefile --icon kalimba.ico main.py
+python -OO -m PyInstaller --clean --onefile --name kalimba --icon kalimba.ico main.py
 pause
