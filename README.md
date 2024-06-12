@@ -40,3 +40,7 @@ You can also create a custom pattern file to support games not currently in. fee
 
 ## Video
 :3
+
+
+https://github.com/prodzpod/kalimba/assets/38210271/c042a90a-c4a5-4bd9-a205-d5b4e68b4474
+
