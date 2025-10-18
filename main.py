@@ -259,7 +259,7 @@ while state != "quit":
     while delay <= 0 and len(queue) > 0:
         note = queue.pop(0)
         if not note[0].startswith("^"):
-            duration = (tuning["release_duration"] + (1 if safe_mode and tuning["release_duration"] > 0 else 0)) * note[1]
+            duration = (tuning["release_duration"] + (1 if safe_mode and tuning["release_duration"] > 0 else 999999)) * note[1]
             if note[0] in playing:
                 playing[note[0]] = duration
                 if DEBUG:

@@ -7,9 +7,9 @@
 ## \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
 # pattern to use (yaml file without ".yaml")
-pattern: unconscious
+pattern: webfishing
 # MIDI devices (run it blank to get list of midi devices)
-input: loopMIDI Port
+input: kalimba
 # keybinds
 key_modechange: '-'
 key_playmidi: '='
@@ -20,4 +20,4 @@ key_quit: esc
 fps: 60
 
 # dont change this
-debug: false
+debug: true

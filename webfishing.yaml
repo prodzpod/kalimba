@@ -1,4 +1,4 @@
-## Yume 2kki
+## Webfishing
 
 ## Config
 # Configurated for RPGMaker 2k.
@@ -9,7 +9,7 @@
 
 _idle_delay: 1 # ticks to rest between each checks 
 _busy_delay: 1 # tick to wait before pressing next note (arpeggio, set to 0 to play multiple notes at the same time)
-_release_duration: 3 # ticks to wait before releasing the note (set to 0 to press until you release the key)
+_release_duration: 2 # ticks to wait before releasing the note (set to 0 to press until you release the key)
 _smart_octave: true # if true, all but last note will be treated as octave and not be pressed multiple times.
 _panic_threshold_notes: 6 # number of queued notes to panic and skip processing. this is important for cases where there are too many notes and the thing is overloaded.
 
@@ -30,17 +30,43 @@ _panic_threshold_notes: 6 # number of queued notes to panic and skip processing.
 
 # key press order: [META_OCTAVE] [META_NOTE] [SPECIFIC_NOTE] [MIDI]
 
-toggle_C: down
-toggle_C#: shift, down
-toggle_D: left
-toggle_D#: shift, left
-toggle_E: up
-toggle_F: right
-toggle_F#: shift, right
-toggle_G: V, down
-toggle_G#: shift, V, down
-toggle_A: V, left
-toggle_A#: shift, V, left
-toggle_B: V, up
-toggle_5: X
-toggle_C6: X, V, right
+toggle_E3: 1, q
+toggle_F3: 2, q
+toggle_F#3: 3, q
+toggle_G3: 4, q
+toggle_G#3: 5, q
+toggle_A3: 6, q
+toggle_A#3: 7, q
+toggle_B3: 8, q
+toggle_C4: 9, q
+toggle_C#4: 1, W
+toggle_D4: 2, W
+toggle_D#4: 3, W
+toggle_E4: 4, W
+toggle_F4: 5, W
+toggle_F#4: 6, W
+toggle_G4: 7, W
+toggle_G#4: 8, W
+toggle_A4: 9, W
+toggle_A#4: 1, E
+toggle_B4: 2, E
+toggle_C5: 3, E
+toggle_C#5: 4, E
+toggle_D5: 5, E
+toggle_D#5: 6, E
+toggle_E5: 7, E
+toggle_F5: 8, E
+toggle_F#5: 1, R
+toggle_G5: 2, R
+toggle_G#5: 3, R
+toggle_A5: 4, R
+toggle_A#5: 5, R
+toggle_B5: 1, T
+toggle_C6: 2, T
+toggle_C#6: 3, T
+toggle_D6: 4, T
+toggle_D#6: 1, Y
+toggle_E6: 2, Y
+toggle_F6: 3, Y
+toggle_F#6: 4, Y
+toggle_G6: 5, Y

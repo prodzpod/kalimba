@@ -7,6 +7,9 @@ Current official support is for:
 - [Core Keeper](https://store.steampowered.com/app/1621690/Core_Keeper/)
 - [Yume 2kki](https://wikiwiki.jp/yumenikki-g3/)
 - [Collective Unconscious](https://ynoproject.net/unconscious/)
+- [Webfishing](https://store.steampowered.com/app/3146520/WEBFISHING/)*
+  - *Assumes chord is set up in this way:
+    ![webfishing guitar setup](./webfishing.png)
 
 ## How to Use / Specs
 Open `@config.yaml`, this file functions as a global config.
